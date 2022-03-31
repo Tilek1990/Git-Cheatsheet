@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git-Hub Cheatsheet</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+<!-- Header Section-->
+    <header>
+        <div class="header-1">
+            <div class="header-col1">
+                <h1 class="h1">GitHub</h1>
+                <h1 class="h2">GIT CHEAT SHEET</h1>
+            </div>
+        </div>
+        <div class="header-2">
+            <img src="Github-PNG-images--50png.png" 
+                 class="logo" alt="Git Logo">
+        </div>
+        
+<!-- Divider -->
+        <div class="header-3">
+            <p class="header3-p">
+               Git is the free and open source distributed version control 
+               system that's responsible for everything GitHub related that 
+               happens locally on your computer. This cheat sheet features 
+               the most important and commonly used Git commands for easy
+               reference. With platform speciﬁc installers for Git, 
+               GitHub also provides the ease of staying 
+               up-to-date with the latest releases
+               of the command line tool while providing a 
+               graphical user interface for day-to-day 
+               interaction, review, and repository
+               synchronization</p>
+        </div>
+    </header>
+<!-- Main Section -->
+    <main class="container">
+        <div class="content">
+            <div class="main-col1">
+                <div class="info-left">
+                    <h3 class="param-head">INSTALLATIONS & GUIS</h3>
+                    <p class="param">With platform speciﬁc installers for Git, 
+                    GitHub also provides the ease of staying 
+                    up-to-date with the latest releases
+                    of the command line tool while providing a 
+                    graphical user interface for day-to-day 
+                    interaction, review, and repository
+                    synchronization.</p>
+                    <p class="param-h">GitHub for Windows</p>
+                    <p class="param"><a href="https://windows.github.com">https://windows.github.com</a></p>
+                    <p class="param-h">GitHub for Mac</p>
+                    <p class="param"><a href="https://mac.github.com">https://mac.github.com</a></p>
+                    <p class="param">For Linux and Solaris platforms, the latest release is available on the oﬃcial Git web site.</p>
+                    <p class="param-h">Git for All Platforms</p>
+                    <p class="param"><a href="http://git-scm.com">http://git-scm.com</a></p>
+                </div>
+<!-- Divider -->
+                <div class="info-left">
+                    <div>
+                        <p class="param-head">SETUP</p>
+                        <p class="param">Conﬁguring user information used across all local repositories</p>
+                    </div>
+                    <div>
+                        <p class="param-h">git config --global user.name “[firstname lastname]”</p>
+                        <p class="param">set a name that is identifiable for credit when review version history</p>
+                        <p class="param-h">git config --global user.email “[valid-email]”</p>
+                        <p class="param">set an email address that will be associated with each history marker</p>
+                        <p class="param-h">git config --global color.ui auto</p>
+                        <p class="param">set automatic command line coloring for Git for easy reviewing</p>
+                    </div>
+                </div>
+<!-- Divider -->
+                <div class="info-left">
+                    <div>
+                        <p class="param-head">SETUP & INIT</p>
+                        <p class="param">Configuring user information, initializing and cloning repositories</p>
+                    </div>
+                    <div>
+                        <p class="param-h">git init</p>
+                        <p class="param">initialize an existing directory as a Git repository</p>
+                        <p class="param-h">git clone [url]</p>
+                        <p class="param">retrieve an entire repository from a hosted location via URL</p><br>
+                    </div>
+                </div>
+<!-- Divider -->  
+                <div class="info-left">
+                    <div>
+                        <p class="param-head">INSPECT & COMPARE</p>
+                        <p class="param">Examining logs, diffs and object information</p>
+                    </div>
+                    <div>
+                        <p class="param-h">git log</p>
+                        <p class="param">show the commit history for the currently active branch</p>
+                        <p class="param-h">git log branchB..branchA</p>
+                        <p class="param">show the commits on branchA that are not on branchB</p>
+                        <p class="param-h">git log --follow [file]</p>
+                        <p class="param">show the commits that changed file, even across renames</p>
+                        <p class="param-h">git diff branchB...branchA</p>
+                        <p class="param">show the diff of what is in branchA that is not in branchB</p>
+                        <p class="param-h">git show [SHA]</p>
+                        <p class="param">show any object in Git in human-readable format</p><br>
+                    </div>            
+                </div>
+<!-- Divider -->  
+                <div class="info-left">
+                    <div>
+                        <p class="param-head">TRACKING PATH CHANGES</p>
+                        <p class="param">Versioning file removes and path changes</p>
+                    </div>
+                    <div>
+                        <p class="param-h">git rm [file]</p>
+                        <p class="param">delete the file from project and stage the removal for commit</p>
+                        <p class="param-h">git mv [existing-path] [new-path]</p>
+                        <p class="param">change an existing file path and stage the move</p>
+                        <p class="param-h">git log --stat -M</p>
+                        <br>
+                    </div>
+                </div>
+<!-- Divider -->
+                <div class="info-left">
+                    <div>
+                        <h3 class="param-head">IGNORING PATTERNS</h3>
+                        <p class="param">Preventing unintentional staging or commiting of files</p>
+                    </div>
+                    <div>
+                        <p class="param-h">logs/ <br>*.notes <br>pattern*/ <br></p>
+                        <p class="param">Save a file with desired patterns as .gitignore with either direct string matches or wildcard globs.</p>
+                        <p class="param-h">git config --global core.excludesfile [file]</p>
+                        <p class="param">system wide ignore pattern for all local repositories <br></p>
+                    </div>
+                </div>
+            </div>
+<!-- Divider --> 
+            <div class="main-col2">  
+                <div class="info-right">
+                    <div>
+                        <h3 class="param-head">STAGE & SNAPSHOT</h3>
+                        <p class="param">Working with snapshots and the Git staging area</p>
+                    </div>
+                    <div>
+                        <p class="param">show modiﬁed ﬁles in working directory, staged for your next commit</p>
+                        <p class="param-h">git add [file]</p>
+                        <p class="param">add a ﬁle as it looks now to your next commit (stage)</p>
+                        <p class="param-h">git reset [file]</p>
+                        <p class="param">unstage a ﬁle while retaining the changes in working directory</p>
+                        <p class="param-h">git diff</p>
+                        <p class="param">diﬀ of what is changed but not staged</p>
+                        <p class="param-h">git diff --staged</p>
+                        <p class="param">diff of what is staged but not yet committed</p>
+                        <p class="param-h">git commit -m “[descriptive message]”</p>
+                        <p class="param">commit your staged content as a new commit snapshot</p>
+                        <p >git status</p>
+                    </div>
+                </div>
+<!-- Divider -->  
+                <div class="info-right">
+                    <div>
+                        <h3 class="param head">BRANCH & MERGE</h3>
+                        <p class="param">Isolating work in branches, 
+                       changing context, and integrating changes</p>
+                    </div>
+                    <div>
+                        <p class="param-h">git branch</p>
+                        <p class="param">list your branches. a * will appear next to the currently active branch</p>
+                        <p class="param-h">git branch [branch-name]</p>
+                        <p class="param">create a new branch at the current commit</p>
+                        <p class="param-h">git checkout</p>
+                        <p class="param">switch to another branch and check it out into your working directory</p>
+                        <p class="param-h">git merge [branch]</p>
+                        <p class="param">merge the specified branch`s history into the current one</p>
+                        <p class="param-h">git log</p>
+                        <p class="param">show all commits in the current branch`s history</p>
+                    </div>
+                </div>
+<!-- Divider -->  
+                <div class="info-right">
+                    <div>
+                        <h3 class="param-head">SHARE & UPDATE</h3>
+                        <p class="param">Retrieving updates from another repository and updating local repos</p>
+                    </div>
+                    <div>
+                        <p class="param-h">git remote add [alias] [url]</p>
+                        <p class="param">add a git URL as an alias</p>
+                        <p class="param-h">git fetch [alias]</p>
+                        <p class="param">fetch down all the branches from that Git remote</p>
+                        <p class="param-h">git merge [alias]/[branch]</p>
+                        <p class="param">merge a remote branch into your current branch to bring it up to date</p>
+                        <p class="param-h">git push [alias] [branch]</p>
+                        <p class="param">Transmit local branch commits to the remote repository branch</p>
+                        <p class="param-h">git pull</p>
+                        <p class="param">fetch and merge any commits from the tracking remote branch</p>
+                    </div>
+                </div>
+<!-- Divider -->  
+                <div class="info-right">
+                    <div>
+                        <h3 class="param-head">REWRITE HISTORY</h3>
+                        <p class="param">Rewriting branches, updating commits and clearing history</p>
+                    </div>
+                    <div>
+                        <p class="param-h">git rebase [branch]</p>
+                        <p class="param">apply any commits of current branch ahead of specified one</p>
+                        <p class="param-h">git reset --hard [commit]</p>
+                        <p class="param">clear staging area, rewrite working tree from specified commit</p>
+                    </div>
+                </div>
+<!-- Divider -->  
+                <div class="info-right">
+                    <div>
+                        <h3 class="param-head">TEMPORARY COMMITS</h3>
+                        <p class="param">Temporarily store modified, tracked files in order to change branches</p>
+                    </div>
+                    <div>
+                        <p class="param-h">git stash</p>
+                        <p class="param">Save modified and staged changes</p>
+                        <p class="param-h">git stash list</p>
+                        <p class="param">list stack-order of stashed file changes</p>
+                        <p class="param-h">git stash pop</p>
+                        <p class="param">write working from top of stash stack</p>
+                        <p class="param-h">git stash drop</p>
+                        <p class="param">discard the changes from top of stash stack</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main> 
+<!-- Divider -->     
+    <footer class="clearfix">
+        <div class="container-foo">
+            <div class="footer-col1">
+                <h2 class="foo1"><span>GitHub</span> Education</h2>
+                <p class="foo2">Teach and learn better, together. GitHub is free for students and teachers. Discounts available for other education uses.</p>
+            </div>
+            <div class="footer-col2">
+                <p class="foo3">
+                <a href="mailto:education@github.com" class="footer-p1 ftrp">education@github.com</a>
+                </p>
+                <p class="foo4">
+                <a href="education.github.com" class="footer-p2 ftrp">education.github.com</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
